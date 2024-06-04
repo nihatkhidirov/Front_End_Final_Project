@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.main-header {
+  width: 100%;
+  background: url("https://templates.envytheme.com/promedi/default/assets/img/slider/1.jpg")
+    center center/cover no-repeat;
+  height: 500px;
+}
+
+.header-upper-parts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+}
+
+.header-upper-part-1 p,
+.header-upper-part-2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header-upper-part-2 ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.header-upper-part-2 ul li a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lower-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px 15px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border: 1px solid;
+}
+
+.navbar-logo img {
+  max-height: 50px;
+}
+
+.navbar-links ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.navbar-links ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.navbar-button button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar-button button:hover {
+  background-color: #0056b3;
+}
+
+.title-part {
+  background-color: white;
+  padding: 20px 15px;
+}
+
+.title-part-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-h h2 {
+  margin: 0;
+}
+
+.title-sub ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.title-sub ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .header-upper-parts,
+  .lower-part,
+  .title-part {
+    padding: 20px 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-upper-parts,
+  .lower-part,
+  .title-part {
+    padding: 20px 100px;
+  }
+}
+
+/* Contact Section Started */
+
+.container .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-area #contactForm .form-control {
+  border: 1px solid #eeeeee;
+}
