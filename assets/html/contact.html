@@ -26,11 +26,9 @@
       <div class="header-upper-parts">
         <div class="header-upper-part-1">
           <div class="upper-part-1-phone-location">
-            <p>
-              <i class="fa-solid fa-phone"></i> Call Us: + 44 458 7895 210
-              <span> </span> <i class="fa-solid fa-location-dot"></i> Quadra
-              Street Victoria, Canada
-            </p>
+            <i class="fa-solid fa-phone"></i> Call Us: + 44 458 7895 210
+            <i class="fa-solid fa-location-dot"></i> Quadra Street Victoria,
+            Canada
           </div>
         </div>
         <div class="header-upper-part-2">
@@ -91,7 +89,7 @@
           </ul>
         </div>
         <div class="navbar-button">
-          <button>Make An Appointment</button>
+          <button id="appointment">Make An Appointment</button>
         </div>
       </nav>
     </header>
@@ -114,108 +112,167 @@
     </div> -->
     <!-- Title Part Finished -->
     <!-- Contact-Section Started -->
-    <section class="contact-area">
+    <section class="contact-part">
       <div class="container">
         <div class="row">
           <div class="left-side">
             <div class="get-in-touch">
-              <h3>Get in Touch</h3>
               <ul>
+                <h3 class="get-in-touch-title">Get In Touch</h3>
+
                 <li>
                   <i class="fa-solid fa-location-dot"></i> 210 Quadra Street
                   Victoria, Canada
                 </li>
                 <li><i class="fa-solid fa-envelope"></i> example@mail.com</li>
-                <li><i class="fa-solid fa-phone"></i> +44 458 7895</li>
+                <li><i class="fa-solid fa-mobile-screen"></i>+44 458 7895</li>
               </ul>
             </div>
             <div class="openning-hours">
+              <h3 class="Openning-Hours-Title">Openning Hours</h3>
+
               <ul>
-                <li>Mon - Thu/ 7.00 AM - 20.00 PM</li>
-                <li>Friday/ 7.00 AM - 20.00 PM</li>
-                <li>Saturday - Thu/ 7.00 AM - 20.00 PM</li>
-                <li>Sunday/ 7.00 AM - 20.00 PM</li>
+                <li>Mon - Thu / 7.00 AM - 20.00 PM</li>
+                <li>Friday / 7.00 AM - 20.00 PM</li>
+                <li>Saturday - Thu / 7.00 AM - 20.00 PM</li>
+                <li>Sunday / 7.00 AM - 20.00 PM</li>
               </ul>
             </div>
           </div>
           <div class="right-side">
-            <h3 class="title">Questions? Let our experts help!</h3>
-            <p>Team of Professionals</p>
-            <form id="contactForm" novalidate="true">
-              <div class="form-group">
+            <div class="questions">
+              <h3 class="questions-title">Questions? Let our experts help!</h3>
+              <p>Team of Professionals</p>
+            </div>
+            <form action="/action_page.php" method="get">
+              <div class="input-name-email">
                 <input
                   type="text"
-                  class="form-control"
-                  name="name"
-                  id="name"
-                  required=""
-                  data-error="Please enter your name"
+                  id="fname"
+                  name="fname"
                   placeholder="Name"
-                />
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group">
+                /><br /><br />
                 <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  id="email"
-                  required=""
-                  data-error="Please enter your email"
+                  type="text"
+                  id="femail"
+                  name="lname"
                   placeholder="Email"
-                />
-                <div class="help-block with-errors"></div>
+                /><br /><br />
               </div>
-              <div class="form-group">
+              <div class="input-subject-phone">
                 <input
                   type="text"
-                  class="form-control"
-                  name="subject"
-                  id="subject"
-                  required=""
-                  data-error="Please enter your subject"
+                  id="fsubject"
+                  name="fname"
                   placeholder="Subject"
-                />
-                <div class="help-block with-errors"></div>
+                /><br /><br />
+                <input
+                  type="number"
+                  id="fphone"
+                  name="lname"
+                  placeholder="Number"
+                /><br /><br />
               </div>
-              <div class="form-group">
+              <div class="input-message">
                 <input
                   type="text"
-                  class="form-control"
-                  name="number"
-                  id="number"
-                  required=""
-                  data-error="Please enter your number"
-                  placeholder="Number"
-                />
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group">
-                <textarea
-                  name="message"
-                  class="form-control"
-                  id="message"
-                  cols="30"
-                  rows="4"
-                  required=""
-                  data-error="Write your message"
+                  id="fmessage"
+                  name="fname"
                   placeholder="Message"
-                ></textarea>
-                <div class="help-block with-errors"></div>
+                /><br /><br />
               </div>
-              <button
-                type="submit"
-                class="default-btn disabled"
-                style="pointer-events: all; cursor: pointer"
-              >
-                Send Message
-              </button>
             </form>
           </div>
         </div>
+        <a href="received.html" target="_blank" id="fbutton">Send Message</a>
       </div>
     </section>
+    <!-- Contact Section Ended -->
+    <!-- Section Map Started -->
+    <section class="mapp">
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.828697336744!2d-123.36207488415738!3d48.44062743798364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f73811b3b8513%3A0x968aa5572a89f353!2s210-2750%20Quadra%20St%2C%20Victoria%2C%20BC%20V8T%204E8%2C%20Canada!5e0!3m2!1sen!2sbd!4v1620281800816!5m2!1sen!2sbd"
+        >
+        </iframe>
+      </div>
+    </section>
+    <!-- Section Map Ended -->
+    <!-- Footer Started -->
 
+    <footer class="footer-part">
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="promedi">
+            <a href="#" class="footer-logo">
+              <img src="../photoes/logo.png" alt="Sekilde Problem Var..." />
+            </a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+              accumsan lacus vel facilisis.
+            </p>
+            <ul class="footer-social-links">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="quick-links">
+            <h3 class="quick-links-title">Quick Links</h3>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Doctors</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="departments">
+            <h3 class="departments-title">Departments</h3>
+
+            <ul>
+              <li><a href="">Cardiology</a></li>
+              <li><a href="">Cardiology</a></li>
+              <li><a href="">Cardiology</a></li>
+              <li><a href="">Cardiology</a></li>
+              <li><a href="">Cardiology</a></li>
+              <li><a href="">Cardiology</a></li>
+            </ul>
+          </div>
+          <div class="contact-us">
+            <h3 class="contact-us-title">Contact Us</h3>
+            <p>
+              Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+              maecenas.
+            </p>
+            <div class="foot-contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:16045555556">+1-604-555-5556</a> <br />
+              <a href="tel:16045555556">+1-604-555-5556</a>
+
+              <br />
+            </div>
+            <div class="foot-contact-info">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:hello@promedi.com">hello@promedi.com</a>
+              <a href="mailto:hello@promedi.com">hello@promedi.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="../js/contact.js"></script>
   </body>
 </html>
