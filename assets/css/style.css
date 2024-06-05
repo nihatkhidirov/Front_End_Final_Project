@@ -56,6 +56,9 @@ body {
   line-height: 32px;
   transition: all 0.5s;
 }
+.upper-part-2-social-media a:hover {
+  background-color: darkblue;
+}
 
 .lower-part {
   width: 80%;
@@ -67,6 +70,60 @@ body {
   padding: 20px 15px;
   position: fixed;
   margin-left: 10%;
+}
+
+.dropdown-home {
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  height: 0px;
+  padding: 12px 16px;
+  z-index: 1;
+  padding: 5px 12px;
+  font-size: 10.5px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.home:hover .dropdown-home {
+  display: block;
+  height: 75px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-blog {
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  height: 0px;
+  padding: 12px 16px;
+  z-index: 1;
+  padding: 5px 12px;
+  font-size: 10.5px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.blog:hover .dropdown-blog {
+  display: block;
+  height: 75px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-department {
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  height: 0px;
+  padding: 12px 16px;
+  z-index: 1;
+  padding: 5px 12px;
+  font-size: 10.5px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.department:hover .dropdown-department {
+  display: block;
+  height: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-logo img {
@@ -323,6 +380,10 @@ body {
   );
   transition: 0.5s;
 }
+.footer-part i:hover {
+  transition: all 0.5s;
+  background-color: #000;
+}
 .quick-links {
   width: 20%;
   display: flex;
@@ -385,4 +446,16 @@ body {
   text-align: center;
   left: 0;
   top: 5px;
+}
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.right-side-bottom-footer ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.right-side-bottom-footer ul li a:hover {
+  color: #396cf0;
 }
