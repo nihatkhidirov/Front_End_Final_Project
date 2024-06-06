@@ -163,12 +163,155 @@ body {
   background-color: black;
 }
 /* Header Finished */
+
+/* News Section Started */
+.news-container {
+  display: flex;
+  justify-content: space-between;
+}
+.news-right-side {
+  width: 35%;
+}
+
+.blogs-news {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.news-container {
+  width: 90%;
+  margin: 60px auto;
+}
+
+.news-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-left-side {
+  width: 60%;
+}
+
+.row-left-side {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjust gap between cards */
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* padding: 16px; */
+  flex: 1 1 calc(40% - 16px); /* 2 cards per row */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-bottom: 16px; /* Add margin-bottom for row spacing */
+}
+.card-container h3 a {
+  color: #212529;
+  line-height: 28px;
+  font-size: 19px;
+  font-weight: bold;
+}
+.card ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+} */
+
+.card-container {
+  padding: 16px;
+}
+
+.card-container h4 {
+  margin: 0 0 10px;
+}
+
+.card-container p {
+  margin: 0;
+}
+.card-container .meta-tag .author img {
+  border-radius: 50%;
+  width: 30px !important;
+  height: 30px;
+}
+.card-container .meta-tag .author ul li {
+  color: #666666;
+}
+.read-more {
+  color: #396cf0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 20px;
+  display: inline-block;
+  line-height: 16px;
+}
+.widget-latest-post .title {
+  font-size: 25px;
+  border-bottom: 4px solid blue;
+}
+#search-box {
+  border: 1px solid #eeeeee;
+  height: 45px;
+  padding: 8px 15px;
+  width: 350px;
+}
+#ffbutton {
+  height: 45px;
+  width: 60px;
+  cursor: pointer;
+  padding: 0;
+  background-color: #396cf0;
+  margin-left: 1px;
+}
+#ffbutton:hover {
+  height: 45px;
+  width: 60px;
+  cursor: pointer;
+  padding: 0;
+  background-color: black;
+  transition: all 0.5s;
+  margin-left: 1px;
+}
+#ffbutton i {
+  color: white;
+}
+
+.single-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content h4 {
+  text-align: start;
+  margin-left: 5px;
+}
+.content li {
+  position: relative;
+  text-align: justify;
+  left: 10px;
+}
+.content h4a {
+  color: black;
+}
+
+/* News Section Endded */
+
 /* Health-Care Section Started */
 .health-container {
   width: 100%;
   background-color: #396cf0;
   opacity: 0.9;
   z-index: -1;
+  height: 150px;
 }
 
 .health-row {
@@ -178,6 +321,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .health-care-left-side-text h3 {
   color: #ffffff;
   font-size: 22px;
